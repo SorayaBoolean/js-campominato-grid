@@ -24,13 +24,20 @@ for (let i = 0; i < 100 ; i++) {
             };
         }
     )
+} //con this.classList.toggle ('clicked') esegue remove e add
+
+
+
+
+
+
+
+
+
+//faccio refactoring creando una funzione
+
+function createGrid {
+
+
+    Return CurrentElement
 }
-
-
-
-
-
-
-
-
-
