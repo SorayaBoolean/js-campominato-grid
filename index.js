@@ -34,10 +34,3 @@ for (let i = 0; i < 100 ; i++) {
 
 
 
-//faccio refactoring creando una funzione
-
-function createGrid {
-
-
-    Return CurrentElement
-}
