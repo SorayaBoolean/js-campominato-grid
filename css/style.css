@@ -23,7 +23,13 @@ body {
     height: 800px;
     margin: 100px auto 0px;
     border: 4px blue solid;
-    background-color: #838383;
+    background-color: #acacac;
+}
+
+.square {
+    border: solid 1px black;
+    height: calc(94% / 10);
+    width: calc(100% / 10);
 }
 
 .header_grid{
@@ -35,7 +41,6 @@ body {
 }
 
 .header_grid .start {
-
     margin: 10px;
     width: 70px;
 }
