@@ -13,14 +13,22 @@ for (let i = 0; i < 100 ; i++) {
     const currentElement = document.createElement ('div');
     currentElement.classList.add ('square');
     gridDom.append (currentElement);
-
+//aggiungo azione al click: colorami square 
     currentElement.addEventListener ('click',
     function () {
+        //per rimuovere la classe clicked al secondo click
+        if (this.classList.contains ('clicked')) {
+            this.classList.remove ('clicked')
+            } else {
         this.classList.add ('clicked')
-    }
-
-)
+            };
+        }
+    )
 }
+
+
+
+
 
 
 
