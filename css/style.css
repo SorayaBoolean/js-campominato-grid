@@ -53,5 +53,9 @@ body {
     cursor: pointer;
 }
 
+.clicked {
+    background-color: #706f6f;
+}
+
 
 

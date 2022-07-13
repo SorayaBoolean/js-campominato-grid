@@ -14,7 +14,15 @@ for (let i = 0; i < 100 ; i++) {
     currentElement.classList.add ('square');
     gridDom.append (currentElement);
 
+    currentElement.addEventListener ('click',
+    function () {
+        this.classList.add ('clicked')
+    }
+
+)
 }
+
+
 
 
 
