@@ -5,7 +5,16 @@ const gridDom = document.getElementById ('grid')
 
 //creo 100 square con ciclo for
 
+
 for (let i = 0; i < 100 ; i++) {
-    gridDom.innerHTML += '<div class=square></div>'
+    //1. Primo metodo
+    //  gridDom.innerHTML += '<div class=square></div>'
+    //2. oppure Secondo metodo
+    const currentElement = document.createElement ('div');
+    currentElement.classList.add ('square');
+    gridDom.append (currentElement);
+
 }
+
+
 
