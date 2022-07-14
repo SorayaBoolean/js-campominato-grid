@@ -8,10 +8,8 @@ const gridDom = document.getElementById ('grid')
 
 for (let i = 0; i < 100 ; i++) {
     
-    const currentElement = document.createElement ('div');
-    currentElement.classList.add ('square');
+    const currentElement = createGridSquare ();
    
-
     currentElement.addEventListener ('click',
     function () {
             this.classList.toggle ('clicked');
@@ -24,7 +22,13 @@ for (let i = 0; i < 100 ; i++) {
 
 
 
+function createGridSquare () {
 
+    const currentElement = document.createElement ('div');
+    currentElement.classList.add ('square');
+
+return currentElement
+}
 
 
 
