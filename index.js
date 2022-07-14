@@ -30,13 +30,17 @@ for (let i = 1; i <= 100 ; i++) {
 
 //1. funzione che mi crea il grid con square
 function createGridSquare (numero) {
-
     const currentElement = document.createElement ('div');
     currentElement.classList.add ('square');
-    
     currentElement.append(numero)
 
-    return currentElement
+    //creo un elemento del Dom di tipo div con classe square-number
+    const numberSquare = document.createElement ('div');
+    numberSquare.classList.add ('square-number');
+    numberSquare.append(numero);
+    //avrò : <div class="square">1,2,3,4</div>
+
+    return currentElement;
 }
 
 //3. funzione per non ripetere le bombe
