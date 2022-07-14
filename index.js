@@ -4,6 +4,7 @@ startDom.addEventListener ('click',
         //prendo gridDom
 const gridDom = document.getElementById ('grid')
 
+
 //creo 100 square con ciclo for:
 
 for (let i = 1; i <= 100 ; i++) {
