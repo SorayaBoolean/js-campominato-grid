@@ -1,12 +1,16 @@
-//prendo gridDom
+const startDom = document.getElementById ('start');
+startDom.addEventListener ('click',
+    function () {
+        //prendo gridDom
 const gridDom = document.getElementById ('grid')
 
 //creo 100 square con ciclo for:
 
 for (let i = 1; i <= 100 ; i++) {
    
-    //richiamo la funzione che mi crea grid con square    
+    //creo un quadrato 
     const currentElement = createGridSquare (i);
+
     //aggiungo event listner per click   
     currentElement.addEventListener ('click',
     function () {
@@ -14,8 +18,13 @@ for (let i = 1; i <= 100 ; i++) {
             console.log(i);
         }
     );
+    //lo aggiungo alla griglia
         gridDom.append (currentElement); 
-} 
+}
+
+
+    }
+);
 
 
 
@@ -33,9 +42,6 @@ function createGridSquare (numero) {
     const currentElement = document.createElement ('div');
     currentElement.classList.add ('square');
     currentElement.append(numero)
-
-    
-
 
    //metto questo ultimo elemento con classe square-div dentro i div con classe square
     return currentElement;
