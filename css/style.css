@@ -30,6 +30,10 @@ body {
     border: solid 1px black;
     height: calc(94% / 10);
     width: calc(100% / 10);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header_grid{
@@ -54,7 +58,15 @@ body {
 }
 
 .clicked {
-    background-color: #706f6f;
+    
+}
+
+.clicked.pari {
+    background-color: green;
+}
+
+.clicked.dispari {
+    background-color: red;
 }
 
 
