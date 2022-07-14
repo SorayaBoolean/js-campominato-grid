@@ -5,13 +5,13 @@ const gridDom = document.getElementById ('grid')
 
 for (let i = 1; i <= 100 ; i++) {
    
-
     //richiamo la funzione che mi crea grid con square    
     const currentElement = createGridSquare (i);
     //aggiungo event listner per click   
     currentElement.addEventListener ('click',
     function () {
             this.classList.toggle ('clicked');
+            console.log(i);
         }
     );
         gridDom.append (currentElement); 
@@ -34,12 +34,10 @@ function createGridSquare (numero) {
     currentElement.classList.add ('square');
     currentElement.append(numero)
 
-    //creo un elemento del Dom di tipo div con classe square-number
-    const numberSquare = document.createElement ('div');
-    numberSquare.classList.add ('square-number');
-    numberSquare.append(numero);
-    //avrò : <div class="square">1,2,3,4</div>
+    
 
+
+   //metto questo ultimo elemento con classe square-div dentro i div con classe square
     return currentElement;
 }
 
